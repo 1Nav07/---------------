@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Игра крестики-нолики</title>
+    </head>
+    <style>
+      h1 {
+          
+          text-align: center;
+      }
+      table, th, td {
+            border:  3px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+    padding: 30px;}
+      </style>
+   
+    <body>
+        <script>function putSymbol(id) {document.getElementById(id).innerHTML = "X";}</script>
+        <h1  style='font-family: Arial Black;'><i>Игра крестики-нолики </i></h1>
+        <p1  style='font-family: Arial Black;'>Правила игры: <br>1. В таблице 3*3 каждый участник делает по одному ходу, и то место куда он походил отображается "X" или "O"
+        <br> 2. Для победы требуется закрыть 3 хода подряд. По диогонали,по горизонтали или по вертикали.</p1>
+            <table style="width:15%" >   
+    <tr>
+    <th id='th_0_0'><button type='button' onclick='putSymbol("th_0_0")'>X</button></td>
+    <th id='th_0_1'><button type='button' onclick='putSymbol("th_0_1")'>X</button></td>
+    <th id='th_0_2'><button type='button' onclick='putSymbol("th_0_2")'>X</button></td>
+    </tr>
+    <tr>
+    <th id='th_1_0'><button type='button' onclick='putSymbol("th_1_0")'>X</button></td>
+    <th id='th_1_1'><button type='button' onclick='putSymbol("th_1_1")'>X</button></td>
+    <th id='th_1_2'><button type='button' onclick='putSymbol("th_1_2")'>X</button></td>
+    </tr>
+    <tr>
+    <th id='th_2_0'><button type='button' onclick="putSymbol('th_2_0')">X</button></td>
+    <th id='th_2_1'><button type='button' onclick='putSymbol("th_2_1")'>X</button></td>
+    <th id='th_2_2'><button type='button' onclick='putSymbol("th_2_2")'>X</button></td>
+    </tr>
+</table>
+
+    </body>
+<html>
